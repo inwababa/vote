@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css" integrity="sha512-3DoNL8FZ5Zeiao7G3ebasH+MHd6O9AL61T9RbGUEDM3QF8m5lNfE/NCaJN+1mrkFrmlpPP2a+nDvwNgy3yZxug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Voting App </title>
+</head>
+<body>
+    <div class="container">
+        <h1>OS Vote</h1> 
+        <p>vote for your favourite OS to develop on </p>
+        <form id="vote-form">
+           <p>
+               <input type="radio" name="os" id="windows" value="Windows">
+               <label for="windows">Windows</label>
+           </p> 
+           <p>
+            <input type="radio" name="os" id="macos" value="MacOs">
+            <label for="macos">MacOs</label>
+            </p> 
+            <p>
+                <input type="radio" name="os" id="linux" value="Linux">
+                <label for="linux">Linux</label>
+            </p> 
+            <p>
+                <input type="radio" name="os" id="other" value="Other">
+                <label for="other">Something Else</label>
+            </p> 
+            <input type="submit" value="Vote" class="btn">
+        </form>
+
+        <br><br>
+
+        <div id="chartContainer" style="height: 300px; width:500px"></div>
+
+    </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.1.1-beta/pusher.min.js" integrity="sha512-BPyqC/fsFB0wLkveLSwmEDvb8AHSezUQqCSL2mMieTTPvC4BfjIJIuLVH+4M6cRJFvYiwvdW1DKcVg77g4Mlrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" integrity="sha512-FJ2OYvUIXUqCcPf1stu+oTBlhn54W0UisZB/TNrZaVMHHhYvLBV9jMbvJYtvDe5x/WVaoXZ6KB+Uqe5hT2vlyA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="main.js"></script>
+</body>
+</html>
